@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby1.8
+#!/usr/bin/env ruby
 
 # workaround-upstart-snafu
 #
@@ -82,7 +82,4 @@ class Workaround
 end
 
 if $0 == __FILE__
-  pid = ARGV.shift
-  raise "USAGE: #{$0} pid" if pid.nil?
-  Workaround.new Integer pid
-end
+  
